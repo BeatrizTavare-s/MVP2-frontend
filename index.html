@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Rotina</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Formulário de Rotina</h1>
+        <form id="routineForm">
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="form-group">
+                <label for="genero_masculino">Gênero Masculino:</label>
+                <select id="genero_masculino" name="genero_masculino" required>
+                    <option value="1">Sim</option>
+                    <option value="0">Não</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="idade">Idade:</label>
+                <input type="number" id="idade" name="idade" required>
+            </div>
+            <div class="form-group">
+                <label for="historico_familiar_sobrepeso">Histórico Familiar de Sobrepeso:</label>
+                <select id="historico_familiar_sobrepeso" name="historico_familiar_sobrepeso" required>
+                    <option value="1">Sim</option>
+                    <option value="0">Não</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="consumo_alta_caloria_com_frequencia">Consumo Alta Caloria com Frequência:</label>
+                <select id="consumo_alta_caloria_com_frequencia" name="consumo_alta_caloria_com_frequencia" required>
+                    <option value="1">Sim</option>
+                    <option value="0">Não</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="consumo_vegetais_com_frequencia">Consumo Vegetais com Frequência:</label>
+                <select id="consumo_vegetais_com_frequencia" name="consumo_vegetais_com_frequencia" required>
+                    <option value="1">Sim</option>
+                    <option value="0">Não</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="refeicoes_dia">Refeições por Dia:</label>
+                <input type="number" id="refeicoes_dia" name="refeicoes_dia" required>
+            </div>
+            <div class="form-group">
+                <label for="consumo_alimentos_entre_refeicoes">Consumo de Alimentos entre Refeições:</label>
+                <select id="consumo_alimentos_entre_refeicoes" name="consumo_alimentos_entre_refeicoes" required>
+                    <option value="1">Sim</option>
+                    <option value="0">Não</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="fumante">Fumante:</label>
+                <select id="fumante" name="fumante" required>
+                    <option value="1">Sim</option>
+                    <option value="0">Não</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="consumo_agua">Consumo de Água (litros):</label>
+                <input type="number" step="0.1" id="consumo_agua" name="consumo_agua" required>
+            </div>
+            <div class="form-group">
+                <label for="monitora_calorias_ingeridas">Monitora Calorias Ingeridas:</label>
+                <select id="monitora_calorias_ingeridas" name="monitora_calorias_ingeridas" required>
+                    <option value="1">Sim</option>
+                    <option value="0">Não</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="nivel_atividade_fisica">Nível de Atividade Física:</label>
+                <input type="number" step="0.1" id="nivel_atividade_fisica" name="nivel_atividade_fisica" required>
+            </div>
+            <div class="form-group">
+                <label for="nivel_uso_tela">Nível de Uso de Tela (horas por dia):</label>
+                <input type="number" id="nivel_uso_tela" name="nivel_uso_tela" required>
+            </div>
+            <div class="form-group">
+                <label for="consumo_alcool">Consumo de Álcool:</label>
+                <select id="consumo_alcool" name="consumo_alcool" required>
+                    <option value="1">Sim</option>
+                    <option value="0">Não</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="transporte_automovel">Transporte Automóvel:</label>
+                <select id="transporte_automovel" name="transporte_automovel" required>
+                    <option value="1">Sim</option>
+                    <option value="0">Não</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="transporte_bicicleta">Transporte Bicicleta:</label>
+                <select id="transporte_bicicleta" name="transporte_bicicleta" required>
+                    <option value="1">Sim</option>
+                    <option value="0">Não</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="transporte_motocicleta">Transporte Motocicleta:</label>
+                <select id="transporte_motocicleta" name="transporte_motocicleta" required>
+                    <option value="1">Sim</option>
+                    <option value="0">Não</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="transporte_publico">Transporte Público:</label>
+                <select id="transporte_publico" name="transporte_publico" required>
+                    <option value="1">Sim</option>
+                    <option value="0">Não</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="transporte_caminhada">Transporte Caminhada:</label>
+                <select id="transporte_caminhada" name="transporte_caminhada" required>
+                    <option value="1">Sim</option>
+                    <option value="0">Não</option>
+                </select>
+            </div>
+
+            <button class="sendButton" type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <div class="table-container">
+        <h2>Histórico de Rotina</h2>
+        <button id="downloadCSV">Baixar CSV</button>
+        <table id="consumoTabela">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Idade</th>
+                    <th>Gênero</th>
+                    <th>Resultado</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Os dados serão inseridos aqui pelo JavaScript -->
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

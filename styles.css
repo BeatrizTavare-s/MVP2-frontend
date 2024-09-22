@@ -1,0 +1,178 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 30rem;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group{
+    display: flex;
+    margin: 0.2rem;
+    align-items: baseline;
+    margin-left: 2rem;
+    justify-content: space-between;
+}
+
+label {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="checkbox"] {
+    margin-left: 10px;
+}
+
+input[type="number"],
+input[type="text"],
+input[type="checkbox"] {
+    margin-left: 10px;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #007BFF;
+}
+
+.sendButton{
+    margin: 2.1rem;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    font-weight: bold; 
+    font-size: 1rem;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.buttonDelete {
+    padding: 8px 12px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    margin: 0;
+}
+.buttonDelete:hover {
+    background-color: #d32f2f;
+}
+
+select {
+    width: 5.6rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    font-size: 16px;
+    color: #333;
+    appearance: none; /* Remove o estilo padrão do navegador */
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 140"><polygon points="10,40 70,100 130,40" fill="%23333"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px top 50%;
+    background-size: 12px;
+    margin-right: 2rem;
+}
+
+select:hover {
+    border-color: #888;
+}
+
+select:focus {
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0 0 5px rgba(3, 104, 255, 0.5);
+}
+
+input{
+    width: 4.5rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    font-size: 16px;
+    color: #333;
+    appearance: none; /* Remove o estilo padrão do navegador */
+    background-repeat: no-repeat;
+    background-position: right 10px top 50%;
+    background-size: 12px;
+    margin-right: 2rem;
+}
+
+input[type="text"] {
+    width: 22rem;
+}
+
+.table-container {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    margin-bottom: 20rem;
+}
+
+th, td {
+    padding: 1rem;
+    text-align: left;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+#consumoTabela{
+    margin-right: 1rem;
+}
