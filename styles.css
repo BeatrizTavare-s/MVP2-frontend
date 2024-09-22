@@ -3,12 +3,58 @@ body {
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
+    color: #333;
+}
+
+.page-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+@media (max-width: 1100px) { /* Define o breakpoint para telas menores */
+    .page-container {
+        display: block; /* Altera para layout de bloco */
+        text-align: center; /* Centraliza o conteúdo, se necessário */
+    }
+    
+    .form-group{
+        margin-bottom: 20px; /* Espaçamento entre os grupos */
+    }
+
+    .container {
+        width: 100%;
+        max-width: 30rem;
+        margin: 20px auto;
+        margin-top: 1rem;
+        /* margin-left: 5rem;
+        margin-right: 5rem; */
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .table-container {
+        width: 100%;
+        max-width: 30rem;
+        margin: 20px auto;
+        margin-top: 1rem;
+        /* margin-left: 5rem;
+        margin-right: 5rem; */
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    }
 }
 
 .container {
     width: 100%;
     max-width: 30rem;
-    margin: 20px auto;
+    /* margin: 20px auto; */
+    margin-top: 1rem;
+    /* margin-left: 5rem;
+    margin-right: 5rem; */
     padding: 20px;
     background-color: #fff;
     border-radius: 8px;
@@ -141,11 +187,18 @@ input[type="text"] {
 }
 
 .table-container {
-    margin-left: 1rem;
-    margin-right: 1rem;
+    color: #333;
+    width: 100%;
+    max-width: 30rem;
+    margin-top: 1rem;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 table {
+    background-color: #fff;
     width: 100%;
     border-collapse: collapse;
     font-family: Arial, sans-serif;
@@ -175,4 +228,15 @@ tr:hover {
 
 #consumoTabela{
     margin-right: 1rem;
+}
+
+#downloadCSV{
+    margin: 1rem;
+    margin-right: 0rem;
+    width: 10rem;
+}
+
+.headerHistory{
+    display: flex;
+    justify-content: space-between;
 }
