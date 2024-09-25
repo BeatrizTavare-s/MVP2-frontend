@@ -1,27 +1,36 @@
 <!DOCTYPE html>
 <html lang="pt">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário de Rotina</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
+    <header class="header-top">
+        <h1>Routine <span>Analyzer</span></h1>
+    </header>
+    <section class="section-top">
+        <img src="img/caminhada-verde.svg" alt="Descrição da imagem">
+        <img src="img/bike-verde.svg" alt="Descrição da imagem">
+        <img src="img/comida-vermelho.svg" alt="Descrição da imagem">
+        <img src="img/triste-vermelho.svg" alt="Descrição da imagem">
+    </section>
     <div class="page-container">
         <div class="container">
-            <h1>Formulário de Rotina</h1>
+            <header>
+                <h2>Formulário de Rotina</h2>
+            </header>
             <form id="routineForm">
                 <div class="form-group">
                     <label for="nome">Nome:</label>
                     <input type="text" id="nome" name="nome" required>
                 </div>
                 <div class="form-group">
-                    <label for="genero_masculino">Gênero Masculino:</label>
+                    <label for="genero_masculino">Gênero:</label>
                     <select id="genero_masculino" name="genero_masculino" required>
-                        <option value="1">Sim</option>
-                        <option value="0">Não</option>
+                        <option value="1">Masculino</option>
+                        <option value="0">Feminino</option>
                     </select>
                 </div>
                 <div class="form-group">

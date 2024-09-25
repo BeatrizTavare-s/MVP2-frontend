@@ -4,30 +4,72 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
+    box-sizing: border-box;
 }
 
-.page-container{
+.header-top{
+    background-color: #32a532;
+    color: #fff;
+    padding: 1rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    
 }
 
-@media (max-width: 1100px) { /* Define o breakpoint para telas menores */
-    .page-container {
-        display: block; /* Altera para layout de bloco */
-        text-align: center; /* Centraliza o conteúdo, se necessário */
+/* ESTILO DO TOP DO SITE */
+.section-top{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.section-top img {
+    width: 100%; /* Faz a imagem ocupar 100% da largura do contêiner */
+    max-width: 15rem; /* Define uma largura máxima */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.page-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+h1{
+  padding: 0;
+  margin: 0 ;
+  margin-left: 2rem ;
+  color: white;
+  font-size: 4rem;
+}
+
+span{
+    font-style: italic;
+}
+
+/* Define o breakpoint para telas menores */
+@media (max-width: 1100px) {
+    .section-top img {
+        width: 100%; /* Faz a imagem ocupar 100% da largura do contêiner */
+        max-width: 10rem; /* Define uma largura máxima */
+        height: auto; /* Mantém a proporção da imagem */
     }
-    
-    .form-group{
-        margin-bottom: 20px; /* Espaçamento entre os grupos */
+
+    .page-container {
+        display: block;
+        text-align: center;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
     }
 
     .container {
+        text-align: start;
         width: 100%;
         max-width: 30rem;
         margin: 20px auto;
         margin-top: 1rem;
-        /* margin-left: 5rem;
-        margin-right: 5rem; */
         padding: 20px;
         background-color: #fff;
         border-radius: 8px;
@@ -39,31 +81,29 @@ body {
         max-width: 30rem;
         margin: 20px auto;
         margin-top: 1rem;
-        /* margin-left: 5rem;
-        margin-right: 5rem; */
         padding: 20px;
         background-color: #fff;
         border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
 }
 
+
+@media (max-width: 700px) {
+    .section-top img {
+        width: 100%; /* Faz a imagem ocupar 100% da largura do contêiner */
+        max-width: 7rem; /* Define uma largura máxima */
+        height: auto; /* Mantém a proporção da imagem */
+    }
+}
 .container {
     width: 100%;
     max-width: 30rem;
-    /* margin: 20px auto; */
     margin-top: 1rem;
-    /* margin-left: 5rem;
-    margin-right: 5rem; */
     padding: 20px;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-h1 {
-    text-align: center;
-    color: #333;
 }
 
 form {
@@ -71,7 +111,8 @@ form {
     flex-direction: column;
 }
 
-.form-group{
+/* Estilo para o Formulário */
+.form-group {
     display: flex;
     margin: 0.2rem;
     align-items: baseline;
@@ -93,7 +134,7 @@ input[type="text"],
 input[type="checkbox"] {
     margin-left: 10px;
 }
-
+/* Estilo dos botões */
 button {
     background-color: #007BFF;
     color: white;
@@ -106,11 +147,11 @@ button:hover {
     background-color: #007BFF;
 }
 
-.sendButton{
+.sendButton {
     margin: 2.1rem;
     padding-top: 0.8rem;
     padding-bottom: 0.8rem;
-    font-weight: bold; 
+    font-weight: bold;
     font-size: 1rem;
 }
 
@@ -137,19 +178,21 @@ button:hover {
     border-radius: 4px;
     margin: 0;
 }
+
 .buttonDelete:hover {
     background-color: #d32f2f;
 }
 
+/* Estilo dos selects */
 select {
-    width: 5.6rem;
+    width: 7rem;
     padding: 0.5rem;
     border: 1px solid #ccc;
     border-radius: 4px;
     background-color: #f9f9f9;
     font-size: 16px;
     color: #333;
-    appearance: none; /* Remove o estilo padrão do navegador */
+    appearance: none;
     background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 140"><polygon points="10,40 70,100 130,40" fill="%23333"/></svg>');
     background-repeat: no-repeat;
     background-position: right 10px top 50%;
@@ -166,16 +209,16 @@ select:focus {
     outline: none;
     box-shadow: 0 0 5px rgba(3, 104, 255, 0.5);
 }
-
-input{
-    width: 4.5rem;
+/* Estilos dos inputs */
+input {
+    width: 5.9rem;
     padding: 0.5rem;
     border: 1px solid #ccc;
     border-radius: 4px;
     background-color: #f9f9f9;
     font-size: 16px;
     color: #333;
-    appearance: none; /* Remove o estilo padrão do navegador */
+    appearance: none;
     background-repeat: no-repeat;
     background-position: right 10px top 50%;
     background-size: 12px;
@@ -185,6 +228,8 @@ input{
 input[type="text"] {
     width: 22rem;
 }
+
+/* Estilo da tabela */
 
 .table-container {
     color: #333;
@@ -205,7 +250,8 @@ table {
     margin-bottom: 20rem;
 }
 
-th, td {
+th,
+td {
     padding: 1rem;
     text-align: left;
     border: 1px solid #ddd;
@@ -213,7 +259,7 @@ th, td {
 }
 
 th {
-    background-color: #4CAF50;
+    background-color: #32a532;
     color: white;
     font-weight: bold;
 }
@@ -226,17 +272,17 @@ tr:hover {
     background-color: #ddd;
 }
 
-#consumoTabela{
+#consumoTabela {
     margin-right: 1rem;
 }
 
-#downloadCSV{
+#downloadCSV {
     margin: 1rem;
     margin-right: 0rem;
     width: 10rem;
 }
 
-.headerHistory{
+.headerHistory {
     display: flex;
     justify-content: space-between;
 }
