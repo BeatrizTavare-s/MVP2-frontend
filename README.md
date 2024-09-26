@@ -6,7 +6,7 @@ Este projeto utiliza técnicas de Machine Learning para prever se uma pessoa tem
 
 ## Descrição do Projeto
 
-O objetivo deste sistema é prever o índice de obesidade de uma pessoa com base em vários fatores do seu estilo de vida, como consumo de alimentos, atividade física e uso de telas. O modelo principal escolhido para a tarefa é o **KNN (K-Nearest Neighbors)**, devido à sua simplicidade, eficácia em problemas de classificação e desempenho consistente em novos dados.
+O objetivo deste sistema é classificar se uma pessoa tem obesidade ou não, com base em vários fatores do seu estilo de vida, como consumo de alimentos, atividade física e uso de telas. O modelo principal escolhido para a tarefa é o **KNN (K-Nearest Neighbors)**, devido à sua simplicidade, eficácia em problemas de classificação e desempenho consistente em novos dados.
 
 ### Funcionalidades
 
